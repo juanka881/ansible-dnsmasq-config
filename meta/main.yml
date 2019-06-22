@@ -1,0 +1,8 @@
+---
+galaxy_info:
+  role_name: juankakode.dnsmasq-config
+  author: "juankakode"
+  description: "add dnsmasq config file"
+  min_ansible_version: "2.4"
+
+dependencies: []
