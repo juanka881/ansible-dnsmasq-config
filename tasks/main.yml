@@ -1,0 +1,7 @@
+---
+- name: setup config file
+  copy:
+    dest: "/etc/dnsmasq.d/{{ dnsmasq_config_name | mandatory }}"
+    content: "{{ dnsmasq_config_content | mandatory }}"
+    mode: 0644
+  notify: restart dnsmasq
